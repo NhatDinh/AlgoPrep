@@ -1,3 +1,3 @@
-# AlgoCasts
+# AlgoPrep
 
-Companion repo to a course on Udemy.com
+Prepping for front end coding interviews
