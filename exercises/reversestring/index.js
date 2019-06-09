@@ -6,6 +6,21 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
-function reverse(str) {}
+var now = require("performance-now");
+
+function reverse(str) {
+  var arr = str
+    .split("")
+    .reverse()
+    .join("");
+  debugger;
+  return arr;
+}
+
+
+var time = t1 - t0;
+debugger;
 
 module.exports = reverse;
+
+reverse("  abcd");
