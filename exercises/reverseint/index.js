@@ -9,17 +9,17 @@
 //   reverseInt(-90) === -9
 
 function reverseInt(n) {
-  var sign = getSign(n);
-  var reversed = reverseConst(n.toString());
-  var reversedInt = getInt(reversed) * sign;
+  const sign = getSign(n);
+  const reversed = reverseConst(n.toString());
+  const reversedInt = getInt(reversed) * sign;
   return reversedInt;
 }
 
 //O(n) reverse function
 function reverseConst(str) {
-  var reversed = "";
-  for (var i = str.length - 1; i >= 0; i--) {
-    var char = str[i];
+  let reversed = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    let char = str[i];
     reversed += char;
   }
   return reversed;
@@ -27,12 +27,12 @@ function reverseConst(str) {
 
 //utilities
 function getInt(str) {
-  var integer = parseInt(str);
+  const integer = parseInt(str);
   return integer;
 }
 
 function getSign(int) {
-  var sign = Math.sign(int);
+  const sign = Math.sign(int);
   return sign;
 }
 
