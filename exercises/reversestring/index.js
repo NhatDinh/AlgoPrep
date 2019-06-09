@@ -6,20 +6,27 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
+//0(3n) == 0(n)
 function reverse(str) {
   var arr = str
     .split("")
     .reverse()
     .join("");
-  debugger;
   return arr;
 }
-function reverse1(str) {
-  debugger;
-}
 
-debugger;
+//0(n)
+function reverse1(str) {
+  var reversed = "";
+
+  for (i = str.length - 1; i >= 0; i--) {
+    var char = str[i];
+    reversed += char;
+    debugger;
+  }
+  return reversed;
+}
 
 module.exports = reverse1;
 
-reverse("  abcd");
+reverse1("  abcd");
