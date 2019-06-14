@@ -17,10 +17,10 @@ function reverse(str) {
 
 //0(n)
 function reverse1(str) {
-  var reversed = "";
+  let reversed = "";
 
   for (i = str.length - 1; i >= 0; i--) {
-    var char = str[i];
+    let char = str[i];
     reversed += char;
     debugger;
   }
